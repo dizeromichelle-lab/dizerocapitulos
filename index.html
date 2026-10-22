@@ -2,96 +2,225 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dizero | Capítulos</title>
-<style>
-* { box-sizing: border-box; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DIZERO | CHAPTERS</title>
 
-html, body {
-  margin: 0;
-  width: 100%;
-  min-height: 100%;
-  font-family: Arial, sans-serif;
-  background: #111;
-}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
 
-.fundo {
-  position: fixed;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-.conteudo {
-  position: relative;
-  z-index: 1;
-  min-height: 100vh;
-  min-height: 100dvh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-  background: rgba(0,0,0,0.12);
-}
+    html, body {
+      margin: 0;
+      width: 100%;
+      min-height: 100%;
+      font-family: 'DM Serif Display', serif;
+      background: #111;
+    }
 
-.capitulos {
-  width: min(100%, 1100px);
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px 48px;
-}
+    .fundo {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
 
-.capitulos a {
-  color: white;
-  text-decoration: none;
-  font-size: clamp(13px, 1.5vw, 19px);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-shadow: 0 1px 5px rgba(0,0,0,.7);
-}
+    .conteudo {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.12);
+    }
 
-.capitulos a:hover {
-  text-decoration: underline;
-}
+    .capitulos {
+      width: min(100%, 1400px);
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 36px;
+    }
 
-@media (max-width: 600px) {
-  .conteudo { padding: 24px 18px; }
-  .capitulos { gap: 22px 16px; }
-  .capitulos a { font-size: 12px; }
-}
-</style>
+    .coluna {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .capitulos a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-shadow: 0 1px 5px rgba(0, 0, 0, 0.75);
+      line-height: 1.2;
+    }
+
+    .capitulo-numero {
+      display: block;
+      font-size: clamp(11px, 0.9vw, 14px);
+      letter-spacing: 1.5px;
+      margin-bottom: 5px;
+    }
+
+    .capitulo-titulo {
+      display: block;
+      font-size: clamp(17px, 1.45vw, 23px);
+      letter-spacing: 0.3px;
+    }
+
+    .capitulos a:hover {
+      opacity: 0.7;
+    }
+
+    @media (max-width: 700px) {
+      .conteudo {
+        align-items: flex-start;
+        padding: 28px 20px;
+      }
+
+      .capitulos {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .coluna {
+        gap: 22px;
+      }
+
+      .capitulo-numero {
+        font-size: 12px;
+      }
+
+      .capitulo-titulo {
+        font-size: 21px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <img
+    class="fundo"
+    src="https://drive.google.com/thumbnail?id=1uJXJI6DFIVno-xEx8hSHr_pgC2SXZbwW&sz=w1600"
+    alt=""
+  >
 
-<img class="fundo"
-src="https://drive.google.com/thumbnail?id=1uJXJI6DFIVno-xEx8hSHr_pgC2SXZbwW&sz=w1600"
-alt="">
+  <main class="conteudo">
+    <nav class="capitulos">
 
-<main class="conteudo">
-  <nav class="capitulos">
-    <a href="https://sites.google.com/view/dizeromichelle/nasoar">↗ Capítulo 01</a>
-    <a href="https://sites.google.com/view/dizeromichelle/nasoar">↗ Capítulo 02</a>
-    <a href="https://sites.google.com/view/dizeromichelle/nasoar">↗ Capítulo 03</a>
-    <a href="https://sites.google.com/view/dizeromichelle/nasoar">↗ Capítulo 04</a>
-    <a href="https://sites.google.com/view/dizeromichelle/nasoar">↗ Capítulo 05</a>
-    <a href="https://sites.google.com/view/dizeromichelle/nasoar">↗ Capítulo 06</a>
-    <a href="https://sites.google.com/view/dizeromichelle/nasoar">↗ Capítulo 07</a>
-    <a href="https://sites.google.com/view/dizeromichelle/nasoar">↗ Capítulo 08</a>
-    <a href="https://sites.google.com/view/dizeromichelle/nasoar">↗ Capítulo 09</a>
-    <a href="https://sites.google.com/view/dizeromichelle/nasoar">↗ Capítulo 10</a>
-    <a href="https://sites.google.com/view/dizeromichelle/nasoar">↗ Capítulo 11</a>
-    <a href="https://sites.google.com/view/dizeromichelle/nasoar">↗ Capítulo 12</a>
-    <a href="https://sites.google.com/view/dizeromichelle/nasoar">↗ Capítulo 13</a>
-    <a href="https://sites.google.com/view/dizeromichelle/nasoar">↗ Capítulo 14</a>
-    <a href="https://sites.google.com/view/dizeromichelle/nasoar">↗ Capítulo 15</a>
-    <a href="https://sites.google.com/view/dizeromichelle/nasoar">↗ Capítulo 16</a>
-    <a href="https://sites.google.com/view/dizeromichelle/nasoar">↗ Capítulo 17</a>
-    <a href="https://sites.google.com/view/dizeromichelle/nasoar">↗ Capítulo 18</a>
-  </nav>
-</main>
+      <div class="coluna">
+        <a href="https://dizeromichelle.cargo.site/nasoar">
+          <span class="capitulo-numero">CHAPTER 1</span>
+          <span class="capitulo-titulo">COMPETITION WON: NASOAR</span>
+        </a>
 
+        <a href="https://dizeromichelle.cargo.site/oboticario">
+          <span class="capitulo-numero">CHAPTER 2</span>
+          <span class="capitulo-titulo">PLANNING FOR O BOTICÁRIO</span>
+        </a>
+
+        <a href="https://dizeromichelle.cargo.site/dinersclub">
+          <span class="capitulo-numero">CHAPTER 3</span>
+          <span class="capitulo-titulo">KV + CONCEPT FOR DINERS CLUB, ECUADOR</span>
+        </a>
+
+        <a href="https://dizeromichelle.cargo.site/santander">
+          <span class="capitulo-numero">CHAPTER 4</span>
+          <span class="capitulo-titulo">CONCEPT + KEY VISUAL FOR SANTANDER</span>
+        </a>
+
+        <a href="https://dizeromichelle.cargo.site/bmg-proposta-de-valor">
+          <span class="capitulo-numero">CHAPTER 5</span>
+          <span class="capitulo-titulo">STRATEGIC PLANNING, CONCEPT AND KV FOR BMG</span>
+        </a>
+
+        <a href="https://dizeromichelle.cargo.site/itau-bba">
+          <span class="capitulo-numero">CHAPTER 6</span>
+          <span class="capitulo-titulo">NAMING CREATION FOR ITAÚ BBA</span>
+        </a>
+      </div>
+
+      <div class="coluna">
+        <a href="https://dizeromichelle.cargo.site/latamairlines">
+          <span class="capitulo-numero">CHAPTER 7</span>
+          <span class="capitulo-titulo">LP, KV, CONCEPT AND CRM FOR LATAM AIRLINES</span>
+        </a>
+
+        <a href="https://dizeromichelle.cargo.site/hebgrocery">
+          <span class="capitulo-numero">CHAPTER 8</span>
+          <span class="capitulo-titulo">CREATION KEY VISUAL FOR H-E-B, TEXAS</span>
+        </a>
+
+        <a href="https://dizeromichelle.cargo.site/bmg">
+          <span class="capitulo-numero">CHAPTER 9</span>
+          <span class="capitulo-titulo">GUIDE FOR B2B AUDIENCE / BMG</span>
+        </a>
+
+        <a href="https://dizeromichelle.cargo.site/astropay">
+          <span class="capitulo-numero">CHAPTER 10</span>
+          <span class="capitulo-titulo">KEY VISUAL FOR ASTROPAY, COLOMBIA AND BRAZIL</span>
+        </a>
+
+        <a href="https://dizeromichelle.cargo.site/bmg-key-visual">
+          <span class="capitulo-numero">CHAPTER 11</span>
+          <span class="capitulo-titulo">CREATION OF KEY VISUALS FOR BMG</span>
+        </a>
+
+        <a href="https://dizeromichelle.cargo.site/boa-vista-equifax">
+          <span class="capitulo-numero">CHAPTER 12</span>
+          <span class="capitulo-titulo">NEW WEBSITE FOR BOA VISTA / EQUIFAX</span>
+        </a>
+      </div>
+
+      <div class="coluna">
+        <a href="https://dizeromichelle.cargo.site/bmg-regua-email-mkt">
+          <span class="capitulo-numero">CHAPTER 13</span>
+          <span class="capitulo-titulo">EMAIL MARKETING CAMPAIGNS FOR BMG</span>
+        </a>
+
+        <a href="https://dizeromichelle.cargo.site/itau">
+          <span class="capitulo-numero">CHAPTER 14</span>
+          <span class="capitulo-titulo">THE MOTHER'S DAY CAMPAIGN FOR ITAÚ</span>
+        </a>
+
+        <a href="https://dizeromichelle.cargo.site/honda">
+          <span class="capitulo-numero">CHAPTER 15</span>
+          <span class="capitulo-titulo">HONDA SOCIAL MEDIA</span>
+        </a>
+
+        <a href="https://dizeromichelle.cargo.site/bmg-kv-concept-moodboard">
+          <span class="capitulo-numero">CHAPTER 16</span>
+          <span class="capitulo-titulo">CONCEPT + KEY VISUAL FOR BMG</span>
+        </a>
+
+        <a href="https://dizeromichelle.cargo.site/tramontina">
+          <span class="capitulo-numero">CHAPTER 17</span>
+          <span class="capitulo-titulo">CRM + BANNERS FOR TRAMONTINA</span>
+        </a>
+
+        <a href="https://dizeromichelle.cargo.site/oboticario-banners">
+          <span class="capitulo-numero">CHAPTER 18</span>
+          <span class="capitulo-titulo">CRM + BANNERS / O BOTICÁRIO</span>
+        </a>
+
+        <a href="https://dizeromichelle.cargo.site/vivo">
+          <span class="capitulo-numero">THE LAST CHAPTER OF THIS STORY</span>
+          <span class="capitulo-titulo">END-OF-YEAR CAMPAIGN / VIVO</span>
+        </a>
+      </div>
+
+    </nav>
+  </main>
 </body>
 </html>
